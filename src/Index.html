@@ -26,53 +26,35 @@
                     </h5>
                 </div>
                 <div class="macbook">
-                    <div class="parallax-4">
-                        <div class="parallax-3">
-                            <div class="parallax-2">
-                                <div class="parallax-1">
+                        <div id="container" class="container">
+                                <div id="scene" class="macbook">
+                                    <div data-depth="1.00"><img src="/img/img-parallax-4.png"></div>
+                                    <div data-depth="0.80"><img src="/img/img-parallax-3.png"></div>
+                                    <div data-depth="0.60"><img src="/img/img-parallax-2.png"></div>
+                                    <div data-depth="0.40"><img src="/img/img-parallax-1.png">
                                     <video  width="69%" height="68%" autoplay loop >
-                                        <source src="/video/video-sample.mp4" type="video/mp4">
+                                            <source src="/video/video-sample.mp4" type="video/mp4">
                                     </video>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
-                    </div>
                 </div>
 
             </section>
-            <div class="parallax">
-                    <div class="water water-layer4"></div>
-                    <div class="water water-layer3"></div>
-                    <div class="water water-layer2"></div>
-                    <div class="water water-layer1"></div>
-            </div>
+            <section class="footer">
+                <div class="ad__left">
+                        Я — Партнер  
+                        <span> sdshdhasudihuai </span>              
+                </div>
+                <div class="ad__right">
+                    Я — Рекламодатель
+                </div>
+
+            </section>
             
-                
-
-
-
-
+                        
         </section>
-<script>
-var currentX = '';
-var currentY = '';
-var movementConstant = .015;
-$(document).mousemove(function(e) {
-  if(currentX == '') currentX = e.pageX;
-  var xdiff = e.pageX - currentX;
-  currentX = e.pageX;
-   if(currentY == '') currentY = e.pageY;
-  var ydiff = e.pageY - currentY;
-  currentY = e.pageY; 
-  $('.parallax div').each(function(i, el) {
-      var movement = (i + 1) * (xdiff * movementConstant);
-	  var movementy = (i + 1) * (ydiff * movementConstant);
-      var newX = $(el).position().left + movement;
-	  var newY = $(el).position().top + movementy;
-      $(el).css('left', newX + 'px');
-	  $(el).css('top', newY + 'px');
-  });
-});
-</script>
+        
+
     </body>
 </html>
