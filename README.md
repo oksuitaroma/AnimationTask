@@ -1,2 +1,3 @@
 # AnimationTask
-npm run serve
+В терминали папки прописати 
+ npm run serve
