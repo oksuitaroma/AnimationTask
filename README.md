@@ -1,3 +1,3 @@
 # AnimationTask
-В терминали папки прописати 
- npm run serve
+ my work with  webpack and scss
+to start project need --- npm run serve
